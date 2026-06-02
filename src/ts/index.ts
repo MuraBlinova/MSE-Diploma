@@ -50,10 +50,6 @@ const PerlinBtn = createButton("Вариант 4", 210, 10, (btn) => {
         if(hidemix) { MixBtn.click(); }
         if(showHexlMixing) { HexMixdBtn.click(); }
         if(wangSpectrumEnabled) { WangMixBtn.click(); }
-        console.log('Default mix enabled:', hidemix);
-        console.log('Perlin enabled:', showPerlinNoise);
-        console.log('Hex mix enabled:', showHexlMixing);
-        console.log('Wang mix enabled:', wangSpectrumEnabled);
     } else if (hidemix || showHexlMixing || wangSpectrumEnabled) {
         showPerlinNoise = !showPerlinNoise;
     }
@@ -68,10 +64,6 @@ const HexMixdBtn = createButton("Вариант 1", 90, 10, (btn) => {
         if(hidemix) { MixBtn.click(); }
         if(showPerlinNoise) { PerlinBtn.click(); }
         if(wangSpectrumEnabled){ WangMixBtn.click(); }
-            console.log('Default mix enabled:', hidemix);
-        console.log('Perlin enabled:', showPerlinNoise);
-        console.log('Hex mix enabled:', showHexlMixing);
-        console.log('Wang mix enabled:', wangSpectrumEnabled);
     } else if (hidemix || showPerlinNoise || wangSpectrumEnabled) {
         showHexlMixing = !showHexlMixing;
     }
@@ -96,10 +88,6 @@ const WangMixBtn = createButton("Вариант 3", 170, 10, (btn) => {
         waterMaterial.setWangTiles(generator, spectrumAtlas, tileSet);
         waterMaterial.enableWangTiles();
         btn.style.background = "#0a0";
-        console.log('Default mix enabled:', hidemix);
-        console.log('Perlin enabled:', showPerlinNoise);
-        console.log('Hex mix enabled:', showHexlMixing);
-        console.log('Wang mix enabled:', wangSpectrumEnabled);
     } else if (hidemix || showPerlinNoise || showHexlMixing) {
         wangSpectrumEnabled = !wangSpectrumEnabled;
         waterMaterial.disableWangTiles();
