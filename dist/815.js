@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_tide=self.webpackChunkweb_tide||[]).push([[815],{7815:(e,r,a)=>{a.r(r),a.d(r,{passPixelShader:()=>n});const s="passPixelShader",t="varying vec2 vUV;uniform sampler2D textureSampler;\n#define CUSTOM_FRAGMENT_DEFINITIONS\nvoid main(void) \n{gl_FragColor=texture2D(textureSampler,vUV);}";a(6121).l.ShadersStore[s]=t;const n={name:s,shader:t}}}]);
