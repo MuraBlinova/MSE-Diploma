@@ -36,8 +36,8 @@ import { createButton, createFPSOverlay, createPreview } from "./ui";
 
 // ========== МЕТРИКИ ПРОИЗВОДИТЕЛЬНОСТИ ==========
 // Настройки
-const PERF_LOG_INTERVAL_MS = 5000; // Интервал сбора статистики (5 секунд)
-const HISTORY_SIZE = 12; // Храним 12 интервалов (1 минута)
+const PERF_LOG_INTERVAL_MS = 60000; // Интервал сбора статистики (60 секунд)
+const HISTORY_SIZE = 5; // Храним 5 интервалов
 
 // Типы для метрик
 interface MetricsStats {
