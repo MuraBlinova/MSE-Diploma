@@ -226,7 +226,7 @@ function logPerformanceInterval(): void {
     
     intervalCount++;
     
-    if (intervalCount % 12 === 0 && perfHistory.length >= 12) {
+    if (intervalCount % HISTORY_SIZE === 0 && perfHistory.length >= HISTORY_SIZE) {
         generateSummaryReport();
     }
 }
